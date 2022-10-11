@@ -4,11 +4,19 @@
 }
 *{
     font-family: 'Calibri';
-    font-size: 20px;
+    font-size: 25px;
+}
+h1{
+    font-size: 45px;
 }
 html, body{
     height: 100%;
+    width: 100%;
     margin: 0;
+    background-color: black;
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     background-color: black;
@@ -45,14 +53,72 @@ header nav>input:hover{
 header button{
     background-color: black;
     border: none;
-    width: 7%;
+    width: 100px;
     margin-right: 50px;
 }
 header button>img{
     -webkit-filter: invert(100%);
-    width: 100%;
+    filter: invert(100%);
+    width: 80px;
 }
 header button:hover img{
     -webkit-filter: invert(50%);
     filter: invert(50%);
+}
+.content{
+    margin: 0px;
+    width: 100%;
+    padding: 0px 10% 0px 10%;
+}
+.introduction{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: -45px;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../image/64a4097720149f9dfdd0d09f98343e74.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.introduction p{
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    font-size: 65px;
+    color: white;
+}
+.information{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information div{
+    color: white;
+    width: 30%;
+    height: 30%;
+    margin: 30px;
+    padding: 20px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -31px;
+    padding: 20px;
 }
