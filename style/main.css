@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Arial';
+    src: url();
+}
+*{
+    font-family: 'Calibri';
+    font-size: 20px;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+header img{
+    width: 7%;
+    -webkit-filter: invert(100%);
+    margin: 15px;
+}
+header h1{
+    font-size: 60px;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav>input{
+    background-color: black;
+    border: none;
+    padding: 10px 50px;
+    color: white;
+    font-size: 25px;
+}
+header nav>input:hover{
+    border-bottom: aqua 2px solid;
+    padding-bottom: 8px;
+    color: aqua;
+}
+header button{
+    background-color: black;
+    border: none;
+    width: 7%;
+    margin-right: 50px;
+}
+header button>img{
+    -webkit-filter: invert(100%);
+    width: 100%;
+}
+header button:hover img{
+    -webkit-filter: invert(50%);
+    filter: invert(50%);
+}
