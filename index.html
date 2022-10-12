@@ -7,17 +7,30 @@
     <link rel="stylesheet" href="style/main.css">
     <title>ValhallaLiquer</title>
 </head>
+<script src="Scripts/menu.js"></script>
 <body>
     <header>
-        <img src="image/logo.png" alt="">
-        <h1>Valhalla</h1>
+        <div class="LogoName">
+            <img src="image/logo.png" alt="">
+            <h1>Valhalla</h1>
+        </div>
         <nav>
-            <input type="button" value="История предприятия">
-            <input type="button" value="Фото">
-            <input type="button" value="Контакты">
-            <input type="button" value="О нас">
+            <a href="pages/history.html"><input type="button" value="История предприятия"></a>
+            <a href=""><input type="button" value="Фото"></a>
+            <a href=""><input type="button" value="Контакты"></a>
+            <a href=""><input type="button" value="О нас"></a>
         </nav>
         <button><img src="image/login.png" alt=""></button>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+        <div id="myNav" class="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+              <a href="pages/history.html">История предприятия</a>
+              <a href="#">Фото</a>
+              <a href="#">Контакты</a>
+              <a href="#">О нас</a>
+            </div>
+          </div>
     </header>
     <content class="content">
         <div class="introduction">
@@ -53,12 +66,23 @@
             </div>
         </div>
         <div class="information">
-            <h1>Магазин</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288001.2399691436!2d12.642602380148032!3d55.6714316969319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653ab7b7b7f2999%3A0x7f9ccd001086b0d3!2sDrive%20In%20Bottle%20Shop!5e0!3m2!1sru!2sru!4v1665526254738!5m2!1sru!2sru" width="800" height="500" style="border:0;" allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288001.2399691436!2d12.642602380148032!3d55.6714316969319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653ab7b7b7f2999%3A0x7f9ccd001086b0d3!2sDrive%20In%20Bottle%20Shop!5e0!3m2!1sru!2sru!4v1665526254738!5m2!1sru!2sru" width="800" height="500" style="border:0;" allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
         </div>
     </content>
     <footer>
         <img src="image/footer.png" alt="">
+        <div>
+            <img src="image/free-icon-facebook-4494464.png" alt="">
+            <img src="image/free-icon-telegram-2111710.png" alt="">
+            <img src="image/free-icon-instagram-3670274.png" alt="">
+        </div>
+        <div>
+            <a href="">Свяжитесь с нами</a>
+            |
+            <a href="">О нас</a>
+        </div>
     </footer>
 </body>
 </html>
